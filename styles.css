@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Epilogue', sans-serif;
+    position: relative;
+}
+
+.container {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo {
+    color: hsl(0, 0%, 8%);
+}
+
+.conteudo {
+    font-weight: 500;
+    color: hsl(0, 0%, 41%);
+}
+
+.btn {
+    margin-top: 1rem;
+    background-color: black;
+    width: 10rem;
+    color: white;
+    font-weight: 700;
+    height: 3rem;
+    border-radius: 1rem;
+}
+
+.img-marcas {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.audio,
+.data,
+.maker,
+.meet {
+    width: 4.5rem;
+    margin: 0 0.5rem;
+}
+
+/* Adicionando media queries para telas menores */
+
+@media only screen and (max-width: 767px) {
+    .btn {
+        width: 100%; /* Faz o botão ocupar 100% da largura em telas pequenas */
+    }
+
+    .img-marcas {
+        flex-wrap: wrap; /* Permite que as imagens quebrem para a próxima linha em telas pequenas */
+    }
+
+    .audio,
+    .data,
+    .maker,
+    .meet {
+        width: 4.5rem;
+        margin: 0.5rem; /* Adiciona espaçamento vertical entre as imagens em telas pequenas */
+    }
+}
+
+
+@media only screen and (min-width: 1025px) {
+    
+    .container{
+        display: flex;
+        flex-direction: row;     
+    }
+    .container-text{
+        margin-left: 8rem;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;      
+    
+    }
+    .img-marcas{
+        
+    }
+
+    .audio,
+    .data,
+    .maker,
+    .meet {
+        width: 6rem;       
+        margin: 0.5rem; /* Adiciona espaçamento vertical entre as imagens em telas pequenas */
+    }
+    .btn{
+        margin: 5rem;
+    }
+
+
+
+
+  }
